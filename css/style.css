@@ -33,7 +33,7 @@
     justify-content: space-between;
     max-width: 1240px;
     top: 28px;
-    left: 56px;
+    left: 70px;
 }
 
 .header a{
@@ -292,60 +292,3 @@
     color: var(--grey2);
 }
 
-/*==============================
-  Media Queries
-==============================*/
-
-@media (max-width: 1440px){
-    .header a{
-        margin-right: 100px;
-    }
-}
-
-@media (max-width: 998px){
-    .section{
-        padding: 70px 45px;
-    }
-
-    .grid-text h1{
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .grid-text p{
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .grid{
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-
-@media (max-width: 895px){
-
-    .main p{
-        margin-left: -20px;
-    }
-
-    .form-cta{
-        grid-template-columns: 300px 150px;
-        margin-left: 100px;
-    }
-
-    .form-cta button a{
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 730px){
-    .main h1, span, p{
-        flex-wrap: wrap;
-    }
-
-    .form-cta{
-        margin-left: 80px;
-    }
-}
