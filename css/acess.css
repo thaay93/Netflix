@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: sans-serif;
+	list-style: none;
+}
+
+figcaption{
+	display: none;
+}
+
+:root{
+  --background-padrão: #00002E;
+  --color-padrão: #fff;
+}
+
+body{
+	background: var(--background-padrão);
+	color: var(--color-padrão);
+}
+
+section{
+    margin-top: 50px;
+}
+
+/*======================
+  Cabeçalho
+======================*/
+
+	header.topo{
+		display: flex;
+		justify-content: center;
+	}
+
+	header.topo img{
+		width: 150px;
+        margin-left: 50px;
+        margin-top: 25px;
+	}
+	
+
+/*======================
+  PÁGINA INICIAL
+======================*/
+
+	h2{
+		display: flex;
+		justify-content: center;
+        align-items: center;
+		margin-bottom: 30px;
+		font-size: 45px;
+	}
+
+	div.pg-home{
+		display: flex;
+		justify-content: center;
+	}
+
+	div.pg-home ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.pg-home img{
+		width: 160px;
+		margin-right: 2em;
+		margin-bottom: 2em;
+	}
+
+	li:hover img{
+		border: 2px solid #fff;
+	}
+
+	li:hover h3{
+		color: #fff;
+	}
+
+	.addPerfil img:hover{
+		border: none;
+		cursor: pointer;
+	}
+
+	.addPerfil:last-child img{
+        width: 80px;
+        margin-left: 60px;
+		margin-top: 40px;
+    }
+
+    .addPerfil:last-child h3 {
+        margin-top: 45px;
+        margin-left: 35px;
+    }
+
+	h3{
+		text-align: center;
+		margin-left: -25px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+/*======================
+  RODAPÉ
+======================*/
+
+	footer{
+		display: flex;
+		justify-content: center;
+		margin-top: 80px;
+	}
+
+	footer button{
+		background-color: transparent;
+		padding: 15px 35px;
+        letter-spacing: 1px;
+		color: rgba(255, 255, 255, 0.5);
+		border: 2px solid rgba(255, 255, 255, 0.5);
+	}
+
+	footer button:hover{
+		color: #fff;
+		border-color: #fff;
+		transform: scale(1.1);
+	}
+
+
+/*=======================
+  Media Quieres
+=======================*/
+
+	@media screen and (min-width: 750px){
+		header.topo{
+			justify-content: flex-start;
+		}
+
+		div.pg-home ul{
+			flex-wrap: nowrap;
+			margin-left: 10em;
+		}
+
+		div.pg-home li{
+			width: 50%;
+		}
+
+		.addPerfil img{
+			margin-left: 1em;
+		}
+	}
+
+	

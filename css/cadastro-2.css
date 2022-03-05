@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --color: #333333;
+    --color2: #fff;
+    --color3: #817575;
+    --fundo: #F6121D;
+    --border: #E6E6E6;
+    --border2: #F3F3F3;
+}
+
+/*===============================
+  Header
+===============================*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+
+.links-cta a{
+    color: var(--color);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.links-cta a:hover{
+    border-bottom: 1px solid var(--color);
+}
+
+/*==================================
+  Página Principal
+==================================*/
+
+.box-cadastro{
+    max-width: 450px;
+    margin: auto;
+}
+
+.box-cadastro .passo{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--color);
+}
+
+.text-titulo{
+    color: var(--color);
+}
+
+.text-spans span{
+    font-size: 18px;
+    color: var(--color);
+    display: block;
+    margin: 10px 0;
+}
+
+.box-input{
+    margin-bottom: 10px;
+}
+
+.box-input input{
+    width: 430px;
+    height: 60px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.submit{
+    width: 430px;
+    height: 60px;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--fundo);
+    margin-top: 10px;
+}
+
+.submit a{
+    color: var(--color2);
+    font-size: 24px;
+}
+
+
+
+/*====================
+  Footer
+====================*/
+
+.footer{
+    width: 100%;
+    height: 250px;
+    padding-top: 5px;
+    z-index: 100;
+    margin-top: 170px;
+    border-top: 1px solid var(--border);
+    background-color: var(--border2);
+}
+
+.footer p{
+    color: var(--color3);
+    font-size: 16px;
+    margin: 40px 0 40px 65px;
+}
+
+.list-footer ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 65px;
+}
+
+.list-footer li{
+    color: var(--color3);
+    list-style: none;
+    font-size: 13px;
+}

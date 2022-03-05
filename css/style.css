@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --white: #fff;
+    --red: #E40914;
+    --black: #000;
+    --grey1: #303030;
+    --grey2: #757575;
+}
+
+.conteiner{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+
+
+/*==============================
+  Header
+==============================*/
+
+.header{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    top: 28px;
+    left: 56px;
+}
+
+.header a{
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    padding: 8px 18px;
+    border-radius: 3px;
+}
+
+.header img{
+    position: absolute;
+    z-index: 100;
+    width: 130px;
+    max-width: 1240px;
+    top: 5px;
+    left: 20px;
+}
+
+/*==============================
+  Main
+==============================*/
+
+.main{
+    height: 100vh;
+    background: url("../asserts/img/bg.jpg") center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    position: relative;
+    text-align: center;
+}
+
+.main-box{
+    z-index: 10;
+}
+
+.main h1{
+    font-size: 50px;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.main span{
+    font-size: 26px;
+}
+
+.main p{
+    font-size: 19px;
+    margin: 40px 0 20px -60px;
+}
+
+.form-cta{
+    display: grid;
+    grid-template-columns: 450px 180px;
+}
+
+.form-cta input{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.form-cta button{
+    background-color: var(--red);
+    outline: none;
+    border: none;
+}
+
+.form-cta button a{
+    color: var(--white);
+    font-size: 30px;
+}
+
+.form-cta button:after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url("../asserts/img/seta.svg");
+    margin-left: 10px;
+}
+
+.form-cta button:hover{
+    background: #f40612;
+    cursor: pointer;
+}
+
+.gradient{
+    background: rgba(29, 24, 24, 0.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*========================
+  Section
+========================*/
+
+.section{
+    background: var(--black);
+    border-top: 8px solid #222;
+    padding: 30px;
+}
+
+.section h1{
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+.section p{
+    font-size: 26px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+.grid-text{
+    color: var(--white);
+    margin-left: 10px;
+}
+
+.img-tv{
+    position: relative;
+}
+
+.img-tv img{
+    position: relative;
+    z-index: 10;
+    width: 500px;
+    margin-top: 30px;
+}
+
+.video-tv{
+    position: absolute;
+    width: 400px;
+    top: 80px;
+    left: 70px;
+}
+
+.computer .video-tv{
+    width: 320px;
+    top: 60px;
+    left: 90px;
+}
+
+.freq h1{
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--white);
+}
+
+.freq-list{
+    margin: 50px auto;
+    max-width: 815px;
+    font-size: 26px;
+}
+
+.freq-question, .freq-resolution{
+    background: var(--grey1);
+    max-width: 830px;
+    margin: 0 auto;
+    color: var(--white);
+    font-size: 26px;
+}
+
+.freq-question{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+.freq-question::after{
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../asserts/img/fechar.svg") no-repeat center center;
+    transform: rotate(45deg);
+}
+
+.freq-question.active::after{
+    transform: rotate(0deg);
+
+}
+
+.freq-resolution{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-heigth 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.freq-resolution > div{
+    padding: 30px;
+}
+
+.freq-resolution.active{
+    max-height: 1200px ;
+}
+
+.box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.box-text p{
+    color: var(--white);
+    font-size: 19px;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+
+
+/*====================
+  Footer
+====================*/
+
+.footer{
+    background: var(--black);
+    color: var(--grey2);
+}
+
+.footer p{
+    font-size: 16px;
+    margin: 40px 0 30px 142px;
+}
+
+.footer ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.footer li{
+    color: var(--white);
+    list-style: none;
+    font-size: 13px;
+    color: var(--grey2);
+}
+
+/*==============================
+  Media Queries
+==============================*/
+
+@media (max-width: 1440px){
+    .header a{
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 998px){
+    .section{
+        padding: 70px 45px;
+    }
+
+    .grid-text h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .grid-text p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 895px){
+
+    .main p{
+        margin-left: -20px;
+    }
+
+    .form-cta{
+        grid-template-columns: 300px 150px;
+        margin-left: 100px;
+    }
+
+    .form-cta button a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 730px){
+    .main h1, span, p{
+        flex-wrap: wrap;
+    }
+
+    .form-cta{
+        margin-left: 80px;
+    }
+}
