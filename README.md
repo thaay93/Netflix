@@ -5,6 +5,9 @@
 
 <p>O projeto consiste em um clone da Netflix, para o desenvolvimento das habilidades em HTML e CSS. No momento totalmente voltado a versão Desktop. Com adição de Javascript apenas para uma área especifica. 
 
+<h3>Venha conhecer meu projeto mais de perto.</h3>
+<p> Github Pages: https://thaay93.github.io/Netflix/
+
 <h2> 💻 Versão Desktop </h2>
 <img src="asserts/img/image1.png" width="600px" heigth="450px"><br>
 <img src="asserts/img/image2.png" width="600px" heigth="450px"><br>
